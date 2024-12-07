@@ -180,6 +180,7 @@
   <build>
    <defaultGoal>clean verify apache-rat:check checkstyle:check japicmp:cmp spotbugs:check pmd:check javadoc:javadoc</defaultGoal>
    <pluginManagement>
+      <plugins>
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
@@ -198,8 +199,7 @@
                   </goals>
               </execution>
           </executions>
-      </plugin>
-      <plugins>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
